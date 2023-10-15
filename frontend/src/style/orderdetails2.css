@@ -1,0 +1,89 @@
+.odrdetailscontainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(197, 197, 197, 0.568);
+  }
+  
+  .odrdetailswrapper {
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .addclose2 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+
+  
+  .odrdetailstitle {
+    font-weight: 300;
+  }
+  
+  .odrdetailsitem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .odrdetailslabel {
+    margin-bottom: 10px;
+  }
+  
+  .odrdetailsinput {
+    height: 40px;
+  }
+  
+  .odrdetailsbutton {
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .odrdetailsbutton:hover{
+    transform: scale(1.02);
+  }
+  .odrdetailsbutton:disabled{
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: not-allowed;
+  }
+
+  .addclose2:hover{
+    transform: scale(1.05);
+  }
+  

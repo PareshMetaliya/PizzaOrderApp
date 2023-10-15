@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+.navbar {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 2px 2px 0 #f8930f;
+  color: rgb(40, 40, 40);
+  justify-content: space-between;
+  top: 0;
+  height: 80px;
+  position: sticky;
+  z-index: 99;
+}
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.callbtn {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(231, 132, 0);
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.number,
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logoimg {
+  /* flex: 1; */
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.center {
+  flex: 2.5;
+}
+.center:hover {
+  color: rgb(231, 132, 0);
+  /* color: white; */
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1.2;
+  /* background-color: red; */
+}
+.right {
+  flex: 0.2;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 20px;
+}
+
+.cart,
+.userme {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 25px;
+}
+.cart:hover {
+  color: rgb(231, 132, 0);
+}
+.userme:hover {
+  color: rgb(231, 132, 0);
+}
+
+.userme {
+  font-size: 28px;
+}
+
+.cartno {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(231, 132, 0);
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.signin {
+  display: flex;
+  /* flex: 0.5; */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signin:hover {
+  color: rgb(231, 132, 0);
+}

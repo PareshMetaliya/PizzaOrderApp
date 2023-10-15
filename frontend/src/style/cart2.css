@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cartcontainer {
+  padding: 50px;
+  display: flex;
+}
+
+.cartleft {
+  flex: 2;
+}
+
+.cartright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.cartimgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.carttable {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.cartname {
+  font-weight: 500;
+  font-weight: bold;
+  /* color: #d1411e; */
+  font-size: 18px;
+}
+
+.cartextras {
+  margin-top: 5px;
+  white-space: normal;
+  color: var(--light-grey-text-color);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.carttotal {
+  font-weight: 800;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cartwrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  gap: 10px;
+}
+
+.carttotalTextTitle {
+  margin-right: 10px;
+}
+
+.cartbutton {
+  height: 30px;
+  color: #d1411e;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cartbutton:disabled{
+  height: 30px;
+  color: #d1411e;
+  background-color: white;
+  font-weight: bold;
+  cursor:not-allowed;
+  margin-top: 20px;
+
+}
+.cartqtyset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:default;
+  border: 1px solid rgb(186, 186, 186);
+  
+  border-radius: 3px;
+}
+.dec {
+  margin-right: 3px;
+  display: flex;
+  padding-left: 2px;
+/* background-color: #d1411e; */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+.dec:hover {
+  transform: scale(1.2);
+}
+.enc {
+  margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.enc:hover {
+  transform: scale(1.2);
+}
+
+
+.delete{
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out
+}
+
+.delete:hover{
+  transform: scale(1.2);
+}
+@media screen and (max-width: 480px) {
+  .cartcontainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .carttable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carttrTitle {
+    display: none;
+  }
+
+  .carttr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .cartimgContainer {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .cartname,
+  .total {
+    font-size: 24px;
+  }
+
+  .cartextras,
+  .cartprice,
+  .cartquantity {
+    font-size: 22px;
+  }
+
+  .cartprice::before {
+    content: "Price: ";
+    font-weight: 500;
+  }
+  .cartquantity::before {
+    content: "Quantity: ";
+    font-weight: 500;
+  }
+  .carttotal::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .cartwrapper {
+    width: 100%;
+  }
+}
+
+.cartprice,
+.cartquantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartquantity {
+  border-left: 1px solid rgb(186, 186, 186);
+  border-right: 1px solid rgb(186, 186, 186);
+  padding: 0.1rem 0.8rem;
+  
+  font-weight: 600;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.payButton {
+  padding: 10px 5px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+  
+}
+
+.payButton:hover{
+  color: white;
+  background-color: teal;
+}
+
+.razorpay-payment-modal {
+  width: 300px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+}

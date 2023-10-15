@@ -1,0 +1,59 @@
+/* .feature {
+  height: calc(100vh - 150px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+} */
+
+.scrollbtnR {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  font-size: 50px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.scrollbtnL {
+  left: 25px;
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 8px;
+  z-index: 8;
+}
+
+.imagecard {
+  /* margin-top: 5px; */
+  width: 300vw;
+  position: relative;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+
+  }
+
+.imagecard::-webkit-scrollbar {
+  display: none;
+}
+
+.imagelist {
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  transition: all 1.5s ease-in-out;
+}

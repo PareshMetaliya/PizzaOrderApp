@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+*{
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footer2container {
+  height: calc(100vh - 100px);
+  background-color: #222;
+  display: flex;
+  overflow-y: hidden; 
+    overflow-x: hidden;
+}
+.footer2img {
+  width: 100%;
+  objectfit: cover;
+  layout: fill;
+}
+
+.footer2item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.footer2item:last-child {
+  flex: 2;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.footer2card {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer2title {
+  font-size: 18px;
+  color: #b7903c;
+}
+
+.footer2text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: lightgray;
+}
+
+.footer2motto {
+  line-height: 50px;
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 480px) {
+  .footer2container {
+    height: auto;
+    text-align: center;
+  }
+  .footer2item:first-child {
+    display: none;
+  }
+
+  .footer2item {
+    flex-direction: column;
+  }
+
+  .footer2title {
+    font-size: 30px;
+  }
+
+  .footer2text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+.admincontainer {
+  padding: 50px;
+  display: flex;
+}
+
+.adminitem {
+  flex: 1;
+  border: 1px solid grey;
+  margin: 2px;
+  border-radius: 8px;
+  padding: 5px;
+  
+}
+.hdg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  width: 95%;
+}
+.admintitle2{
+  border-bottom: 1px solid black;
+}
+.adminitem2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid black;
+}
+.adminitem3 {
+  width: 100%;
+}
+
+.addbutton {
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px;
+  cursor: pointer;
+  background-color: teal;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.addbutton:disabled{
+   display: none;
+}
+
+.admintable {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.adminbutton {
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.addbutton:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.adminbutton:first-child {
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.adminbutton:first-child:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.adminbutton:last-child {
+  background-color: crimson;
+}
+.adminbutton:last-child:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}

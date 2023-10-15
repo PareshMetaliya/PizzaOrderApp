@@ -1,0 +1,17 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide the horizontal scrollbar */
+  /* body {
+    overflow-x: hidden;
+  } */
+
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    
+    
+  }

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.pizzacardcontainer {
+  width: 250px;
+  margin: 5px;
+  margin-top: 5px;
+  position: relative;
+  height: 100%;
+  min-height: 370px;
+  border-radius: 8px;
+  box-shadow: 0 0 18px #8d979e33;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+ 
+}
+
+.pizzacardcontainer:hover {
+  transform: scale(1.02);
+}
+.pizzacardimage {
+  overflow: hidden;
+  position: relative;
+  padding-top: 73%;
+}
+
+.cardimage {
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  display: block;
+
+  max-width: 100%;
+  opacity: 1;
+  transition: all 0.5s;
+  min-height: 175px;
+}
+
+.pizzacardcontent{
+  padding: 16px;
+  flex-grow: 1;
+  flex:1;
+
+
+}
+
+.productlabel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+ 
+
+}
+
+.productlabel2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+.veglogo{
+width: 15px;
+height: 15px;
+margin: 2px;
+margin-top:7px;
+
+}
+
+.productName{
+  
+  margin: 5px 0;
+  font-size: 15px;
+  text-align: left;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
+}
+
+.pizzacarddesc{
+  margin-top: 5px;
+  white-space: normal;
+  color: var(--light-grey-text-color);
+  font-size: 12px;
+  line-height: 1.6;
+  
+
+}
+
+.cardfooter{
+  flex: 1;
+  
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pizzacardprice{
+
+  color: var(--dark-grey-text-color);
+    line-height: 25px;
+    margin-right: 10px;
+    margin-left:10px;
+    font-weight: 700;
+    font-size: 18px;
+    /* background-color: red; */
+
+}
+.btn{
+
+  cursor: pointer;
+  padding: 0.433rem;
+  border: 1px solid rgb(0, 171, 0);
+  /* color: rgb(0, 171, 0); */
+  color: teal;
+  background-color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-radius: 6px;
+  font-weight: 750;
+    font-size: 13px;
+  
+}
+.btn:hover{
+  color:white;
+  background-color: teal;
+}
+
+.item {
+  width: 100%;
+  height: 40px;
+  
+ 
+}
+
+.item:nth-child(2) {
+  height: 70px;
+  align-self: center; /* Align item 2 in the middle */
+}
+
+.item:last-child {
+  height: 30px;
+  align-self: flex-end; /* Align item 3 at the bottom */
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .pizzacardcontainer {
+    width: 100%;
+  }
+
+  .pizzacardtitle {
+    font-size: 30px;
+  }
+
+  .pizzacardprice,
+  .pizzacarddesc {
+    font-size: 24px;
+  }
+}
